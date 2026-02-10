@@ -56,7 +56,7 @@ Target: `loan_status` (0 = No Default, 1 = Default)
 
 ## Tech Stack
 
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, SHAP, Streamlit
+Python, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit
 
 ## How to Run
 
@@ -68,8 +68,11 @@ streamlit run app.py  # Launch web app
 
 Outputs:
 - Trained model: `credit_risk_model.pkl`
-- Plots: confusion matrix, ROC curve, calibration curve, PD distribution, feature importances, SHAP summary, SHAP waterfall
-- Web app at `http://localhost:8501`
+- Plots: confusion matrix, ROC curve, calibration curve, PD distribution, feature importances
+- Interactive web app at `http://localhost:8501` with:
+  - Probability of Default prediction
+  - Risk classification (Low/Medium/High)
+  - Personalized risk reduction recommendations based on feature importance
 
 ## Future Work
 
