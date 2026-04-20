@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # ---- Page Config ----
-st.set_page_config(page_title="Credit Risk Assessment", page_icon="🏦", layout="wide")
+st.set_page_config(page_title="Credit Risk Assessment", layout="wide")
 
 # ---- Load Model ----
 @st.cache_resource
@@ -53,7 +53,7 @@ input_data = pd.DataFrame([{
 }])
 
 # ---- Main Content ----
-st.title("🏦 Credit Risk Assessment System")
+st.title("Credit Risk Assessment System")
 st.markdown("Predict the **Probability of Default** and risk category for a loan applicant.")
 
 col1, col2 = st.columns(2)
