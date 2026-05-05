@@ -2,6 +2,10 @@
 
 This project uses machine learning to predict whether a loan applicant is likely to default. It calculates a Probability of Default (PD) for each borrower and groups them into Low, Medium, or High risk.
 
+## Live Demo
+
+https://data-driven-credit-risk-modelling-for-financial-decision-making.streamlit.app/
+
 ## Objectives
 
 - Predict loan default using ML
@@ -56,7 +60,7 @@ Target: `loan_status` (0 = No Default, 1 = Default)
 
 ## Tech Stack
 
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit
+Python, Pandas, NumPy, Scikit-learn, Matplotlib, SHAP, Streamlit
 
 ## How to Run
 
@@ -68,7 +72,7 @@ streamlit run app.py  # Launch web app
 
 Outputs:
 - Trained model: `credit_risk_model.pkl`
-- Plots: confusion matrix, ROC curve, calibration curve, PD distribution, feature importances
+- Plots: confusion matrix, ROC curve, calibration curve, PD distribution, feature importances, SHAP summary, SHAP waterfall
 - Interactive web app at `http://localhost:8501` with:
   - Probability of Default prediction
   - Risk classification (Low/Medium/High)
